@@ -54,7 +54,6 @@ if [ $i_size -lt 12 ] ; then
     export i_size="12"
 fi
 
-export i_theme=`gsettings get org.gnome.desktop.interface icon-theme | sed "s/'//g"`
 export i_task=$(( w_height*6/10 ))
 if [ $i_task -lt 16 ] ; then
     export i_task="16"
