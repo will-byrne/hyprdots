@@ -54,7 +54,7 @@ fi
 
 # restart waybar
 
-killall waybar
+pkill waybar
 waybar > /dev/null 2>&1 &
 # killall -SIGUSR2 waybar
 

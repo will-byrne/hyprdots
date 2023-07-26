@@ -63,5 +63,5 @@ done
 # Update the symbolic link
 ln -sf "$new_target" "$waybar_dir/config.jsonc"
 sleep 1
-killall waybar # I have tried killall -SIGUSR2 waybar w/o success
+pkill waybar # I have tried killall -SIGUSR2 waybar w/o success
 waybar > /dev/null 2>&1 &

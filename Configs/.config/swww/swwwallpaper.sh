@@ -50,7 +50,8 @@ Wall_Set()
 
 ## set variables
 
-BaseDir=`dirname $(realpath $0)`
+#BaseDir=`dirname $(realpath $0)`
+BaseDir=/home/luna
 
 if [ `grep '^1|' $BaseDir/wall.ctl | wc -l` -ne 1 ] ; then
     echo "ERROR : $BaseDir/wall.ctl Unable to fetch theme..."
@@ -66,8 +67,9 @@ if [ ! -f $getWall2 ] ; then
 fi
 
 if [ ! -f $BaseDir/wall.set ] ; then
-    echo "ERROR: wallpaper link is broken"
-    exit 1
+    #echo "ERROR: wallpaper link is broken"
+    #exit 1
+    Wall_Next
 fi
 
 Wallist=(`dirname $getWall2`/*)

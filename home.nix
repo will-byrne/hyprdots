@@ -58,6 +58,7 @@
 	meslo-lgs-nf
 	killall
         envsubst
+	imagemagick
       ];
       programs.git = {
         enable = true;

@@ -7,7 +7,7 @@
     min-height: 10px;
 }
 
-@import "themes/.css";
+@import "themes/Catppuccin-Mocha.css";
 
 window#waybar {
     background: @bar-bg;
